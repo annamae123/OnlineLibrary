@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Poppins:ital,wght@0,300;1,400&display=swap');
+body{
+margin:0;
+/* background-image: url(38828.jpg);
+background-position: center; */
+background-size: cover;
+position: relative;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(246,159,98);
+background: linear-gradient(180deg, rgba(246,159,98,1) 0%, rgba(17,209,231,1) 81%);
+    align-items: center;
+}
+.nav-links{
+    text-align: right;
+   
+}.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background: #F44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+img{
+    width: 20%;
+}
+.search-box{
+   position: absolute;
+   right: 40%;
+   display: flex;
+   flex: row;
+   width: 30%;
+   height: 30px;
+}
+input {
+    width: 100%;
+    
+}
+.sticky{
+    width:100%;
+    position: sticky;
+    top: 0px;
+}
+.chek{
+     position: sticky;
+    float: right;
+    /* padding-bottom: 20px; */
+    /*width: fit-content;
+    background-color: antiquewhite;
+     display: flex;
+      height: 50px;
+      margin-top: 33%;
+      margin-right: 0%; */
+         /* position: fixed;
+    float: right;
+    /* padding-bottom: 20px; */
+    width: 100%;
+    background-color: antiquewhite;
+     display: flex;
+      height: 50px;
+      margin-top: auto;
+     
+
+ } 
+ .chek :hover{
+    background-color: skyblue;
+
+ }
+.cart{
+ background-color: rgb(223, 198, 166);
+text-decoration: none;
+width: 70%;
+text-align: center;
+padding: 3px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+
+}
+.payment{
+background-color: rgb(222, 236, 238);
+text-decoration: none;
+width: 100%;
+text-align: center;
+padding: 3px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+}
+.out{
+    width: 100%;
+    text-align: center;
+    background-color: #ff523b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.star{
+    display: flex;
+    align-items: center;
+ flex-direction: row;
+ justify-content: center;
+}
+.book-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+.book-container .card{
+    background: rgb(246,227,215);
+       width: auto;  
+     /* height: auto;    */
+     margin: 5px 5px;  
+    border-radius: 22px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px rgba(0,0,01);
+    
+}
+.book-cover {
+    width:100%;
+     height: 480px;  
+    border-radius: 20px 10px 0 0;
+ 
+}
+.book-info{
+  display: flex;    
+  flex-direction: column; 
+  flex: 1;   
+   justify-content: space-between;      
+display: block; 
+  width: auto;
+  padding: 0; 
+  
+/* }
+.book-info .read-more{ */
+/* display: none; */
+  /* }
+.fa {
+    padding:0 10px;
+   text-align: center;
+   display: flex; */
+ 
+}
+.buttons{
+    display: flex;
+    width: 100%;
+     height: 60px;
+    
+   
+}
+.buttons :hover{
+     background-color: rgb(146, 246, 241);
+}
+.btn-cart{
+background-color: antiquewhite;
+text-decoration: none;
+font-size: smaller;
+flex: 2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 0 0 0 20px;
+color: black;
+
+}
+.btn-wishlist{
+background-color: beige;
+text-decoration: none;
+flex: 2;
+font-size: smaller;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: black;
+}
+.btn-buy{
+    background-color: #ff523b;
+text-decoration:none ;
+flex: 3;
+font-size: larger;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 0 0 20px 0;
+color: black;
+}
+.buttons i{
+    font-size: large;
+}
+@media (max-width:900px) {
+    .book-container{
+        align-items: center;
+      display: flex;
+      justify-content: center;
+}
+}
+@media (max-width:540px) {
+   .book-container{
+    align-items: center;
+    flex-direction: column;
+   }
+   .book-container .card{
+    flex-direction: row;
+    height: auto;
+    width: auto;
+   }
+   .book-cover{
+    height: auto;
+    width: 150px;
+    border-radius: 20px 0 0 20px;
+   }
+   .book-info{
+    background: rgb(240, 227, 217);
+    border-radius: 0 20px 20px 0;
+    flex: 1;
+   }
+   .buttons span{
+    display: none;
+   }
+   .btn-cart{
+    border-radius: 0;
+   }
+   .book-info span{
+display: none;
+   }
+   .book-info .read-more{
+   display: block;
+   }
+   .search-box{
+    
+    /* display: flex;
+     flex: row;
+     width: 200px;
+     height: 30px; */
+display: none   ;
+}
+nav{
+    height: 50px;
+}
+img{
+    width: 100%;
+}
+}

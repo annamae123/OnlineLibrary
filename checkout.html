@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <script src="https://kit.fontawesome.com/406f83cbef.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+        <nav>
+            <a href="index.html"><img src="log.png" width="30%"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html"><i class="fa-solid fa-user">Store</i></a></li>
+                    <li><a href="#">Follow us on<i class="fa-brands fa-facebook"><i class="fa-brands fa-square-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i></i>Help</a></li>
+
+                    <li><a href="#"><select>
+                        <option selected disabled><i class="fa-solid fa-globe"></i>Language</option>
+                      </select></a></li>
+
+                    <li><a href="index.html"><i class="fa-solid fa-user">Profile</i></a></li>
+                </ul>
+            </div>
+                   
+        </nav>
+
+        
+   
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Billing Address</h3>
+                    <div class="inputBox">
+                        <span>Full Name:</span>
+                        <input type="text" placeholder="Juan dela Cruz">
+                    </div>
+                    <div class="inputBox">
+                        <span>Email:</span>
+                        <input type="text" placeholder="123@gmail.com">
+                    </div>
+                    <div class="inputBox">
+                        <span>Adress:</span>
+                        <input type="text" placeholder="Das Toledo City">
+                    </div>
+                    <div class="inputBox">
+                        <span>City:</span>
+                        <input type="text" placeholder="Cebu">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>State:</span>
+                            <input type="text" placeholder="Philippines">
+                        </div>
+                        <div class="inputBox">
+                            <span>Zip:</span>
+                            <input type="number" placeholder="1234">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="title">Payment</h3>
+                    <div class="radio">
+                        <input type="radio" name="pay_method" value="Credit">
+                        <label>Credit Card</label>
+  
+                        <input type="radio"name="pay_method" value="COD">
+                        <label>Cash on delivery</label>
+                          </div>
+
+
+                    <div class="inputBox">
+                        <span><h4>Cards Accepted</h4></span>
+                        <img src="card.png" alt="">
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+            <div class="small-container cart-page">
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+                    <tr>
+                        <td><div class="cart-info"><img src="image1.jpg" >
+                            <div><p>Books</p>
+                                <small>Price:$3</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div></td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50</td>
+            
+            
+            
+                    </tr>
+                    <tr>
+                        <td><div class="cart-info"><img src="image1.jpg" >
+                            <div><p>Books</p>
+                                <small>Price:$3</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div></td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50</td>
+            
+            
+            
+                    </tr>
+                    <tr>
+                        <td><div class="cart-info"><img src="image1.jpg" >
+                            <div><p>Books</p>
+                                <small>Price:$3</small>
+                                <br>
+                                <a href="">Remove</a>
+                            </div>
+                        </div></td>
+                        <td><input type="number" value="1"></td>
+                        <td>$50</td>
+            
+            
+            
+                    </tr>
+            
+                    <div class="total-price">
+                        <table>
+                            <tr>
+                                <td>Subtotal</td>
+                                <td>$4</td>
+                            </tr>
+                            <tr>
+                                <td>Tax</td>
+                                <td>$1</td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td>$4</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                </table>
+                <input type="submit" value="proceed to Checkout" class="submit-btn">
+                
+            </div>
+            
+        </form>
+       
+    </div>
+
+    <div class="chek">
+  
+   
+        <div class="cart"><i class="fa-solid fa-cart-plus"></i>Cart</div>
+        <div class="payment">Total Payment</div>
+    
+   
+    </div>
+   
+</body>
+</html>
